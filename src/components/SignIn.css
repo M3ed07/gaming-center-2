@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+body{
+  background-image: url('../Images/loginBackground.jpg');
+  background-position: 60%;
+}
+button{
+  cursor: pointer;
+}
+.login-form-container{
+  color: white;
+  margin: 74px 69px;
+}
+.LoginTopSection{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  opacity: 80% !important;
+  gap: 6px;
+  margin: 0px 0px 70px 0px;
+}
+.LoginTopSection h2{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Arial Rounded MT Bold";
+}
+.Discription{
+  opacity: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 70px 0px;
+}
+
+form input {
+  width:452px;
+  height:60px;
+  opacity:70%;
+  font-weight: bold;
+  font-size:18px;
+  color:#1B242E;
+  border-radius:6px;
+  border: none;
+  background-color: #EAEAEA;
+  padding: 0px 14px;
+}
+.myChoose{
+  margin: 61px 0px 61px 0px;
+  display: inline-flex;
+  align-items: center;
+  filter: drop-shadow(0 0 5px #EAEAEA);
+}
+.myChoose span{
+  opacity: 80%;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0px 14px;
+}
+.line{
+  width: 214px;
+  height: 1px;
+  background: white;
+  opacity: 80%;
+}
+label{
+  margin: 0px 0px 4px 0px;
+  opacity: 60%;
+  font-weight:bold;
+  font-size: 22px;
+  display: block;
+}
+.form-input-group{
+  margin: 0px 0px 50.5px 0px;
+  position: relative;
+  z-index: 2;
+}
+.passwordEye{
+  position: absolute;
+  transform: translateY(16px);
+  text-align: center;
+  background-color: unset;
+  border: none;
+}
+.passwordEye img{
+  position: absolute;
+  transform: translateX(-48px);
+  text-align: center;
+  background-color: unset;
+  border: none;
+
+}
+.form-input-group-SignUp{
+  margin: 0px 0px 30.5px 0px;
+}
+
+.LoginSubmitButton{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width:480px;
+  height:60px;
+  opacity:90%;
+  font-weight: bold;
+  font-size:22px;
+  border-radius:14px;
+  background-color: #EAEAEA;
+  color:#1B242E;
+  transition: .2s;
+  border: solid 1px ;
+  gap: 14px;
+}
+.LoginSubmitButton:hover {
+  color: #EAEAEA;
+  box-shadow: 0 0 5px #EAEAEA;
+  text-shadow: 0 0 5px #EAEAEA;
+  background: unset;
+  backdrop-filter: blur(30px); 
+}
+
+.Login-img{
+  float: right;
+  width: 900px;
+  margin: -20px 0px 0px 0px;
+}
+
+.CreateNewAccount{
+ margin: 40px 0px 0px 86px;
+}
+.CreateNewAccount p{
+font-size: 18px;
+opacity: 60%;
+font-weight: bold;
+}
+.CreateNewAccount button{
+  opacity: 100%;
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  transition: .2s;
+  
+}
+.CreateNewAccount button:hover {
+  color: white;
+  text-shadow: 0 0 5px #EAEAEA;
+  
+}
+.AccountCreated{
+  margin: 40px 0px 0px 130px;
+}
+.AccountCreated p{
+  font-size: 18px;
+  opacity: 60%;
+  font-weight: bold;
+}
+.AccountCreated button{
+  opacity: 100%;
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  transition: .2s;
+}
+
+.AccountCreated button:hover {
+  color: white;
+  text-shadow: 0 0 5px #EAEAEA;
+  
+}
+
+
+@media only screen and (min-width: 414px) and (max-width:736px){
+  body{
+    background-image: url('../Images/loginBackground.jpg');
+    background-position: 200%;
+    display: flex;
+    justify-content: center;
+  }
+  .login-form-container{
+    margin: 20px 20px;
+  }
+  .Discription{
+    font-size: 26px;
+  }
+  .form-input-group{
+   width: 484px;
+  }
+  form input {
+    
+    padding: 0px 14px;
+  }
+  .LoginSubmitButton{
+    width:100%;
+  }
+  .Login-img{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px){
+  body{
+    background-image: url('../Images/loginBackground.jpg');
+    background-position: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .login-form-container{
+    color: white;
+    margin: 50px;
+  }
+  .Discription{
+    font-size: 26px;
+  }
+  
+  .Login-img{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width:1112px){
+  body{
+    padding: 60px;
+    background-image: url('../Images/loginBackground.jpg');
+    background-position: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .login-form-container{
+    color: white;
+    margin: 50px;
+  }
+  .Discription{
+    font-size: 26px;
+  }
+  
+  .Login-img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width:778px){
+
+  .login-form-container{
+    color: white;
+    margin: 40px 60px;
+  }
+  .Login-img{
+    width: 660px;
+    margin: 0px 0px 0px 0px;
+  }
+  .LoginTopSection{
+    margin: 0px 0px 30px 0px;
+  }
+  .Discription{
+    font-size: 26px;
+    margin: 0px 0px 30px 0px;
+  }
+  .form-input-group{
+    margin: 0px 0px 30.5px 0px;
+    position: relative;
+    z-index: 2;
+  }
+  .myChoose{
+    margin: 31px 0px 31px 0px;
+    display: inline-flex;
+    align-items: center;
+    filter: drop-shadow(0 0 5px #EAEAEA);
+  }
+}

@@ -1,0 +1,79 @@
+.charts{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.LineChart{
+    background-color: #29323C;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+}
+.Donut{
+    background-color: #29323C;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+}
+.Cards{
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: normal;
+}
+.Cards h3{
+    font-weight:500;
+    font-size: 24px;
+}
+.Cards img{
+    filter: drop-shadow(0px 0px 30px #FFE2E7);
+}
+
+
+.card1{
+    width: 24%;
+    background-color: #29323C;
+    border-radius: 20px;
+    transition: all 250ms;
+}
+.card1 span{
+    color: #84F4AA;
+}
+.card1 p{
+font-size: 15px;
+margin-left: 6%;
+margin-top: 2%;
+}
+.card1:hover{
+    transform: scale(1.05) ;
+}
+.topSectionCard{
+    margin: 7% 20px 4px 50px ;
+    display: flex;
+    justify-content: space-between;
+}
+.Cards h2{
+    font-size: 36px;
+    margin-left:50px;
+}
+
+.CardLine{
+    margin-top:8%;
+    float: left;
+    margin-left: 26px;
+        width: 4px;
+        height: 100px;
+        background: #FD4D85;
+        opacity: 80%;
+        filter: drop-shadow(0px 0px 10px #FFE2E7);
+        border-radius: 10px;
+}
+.AdminTable{
+    height: 300px;
+    width: 100%;
+}

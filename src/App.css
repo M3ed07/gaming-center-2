@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+h1,h2,h3,h4{font-weight: 400;}
+*{
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-family: 'Bai Jamjuree', sans-serif;
+  
+}
+.Container{
+  display: flex;
+  height: 100%;
+}
+main{
+  background-color: #EBEBEB;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  
+}
+.Logo{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  opacity: 90%;
+  font-family: "Arial Rounded MT Bold" !important;
+  font-weight: bold;
+  margin: 35px 0px 82px 30px;
+  gap: 6px;
+  color: #29323C;
+}
+.Logo p{
+  font-size: 23px;
+}
+.Sidebar{
+background-color: #E7E8E8;
+height: 100%;
+min-height: 100vh;
+width: 336px !important;
+border-right-style: solid;
+border-color: #D3D4D5;
+}
+.link{
+  display: flex;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: #1A232C;
+  margin: 18px 30px;
+  gap: 14px;
+  opacity: 70%;
+  padding: 14px 20px;
+  border-radius: 25px;
+  text-align: center;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.link h4{
+  font-size: 21px;
+  font-weight: 400;
+}
+.link:hover{
+  background-color: #29323C;
+  color: #E7E8E8;
+  transition: all 0.3s;
+  box-shadow: 0px 1px 8px #29323C;
+  transform: scale(1.1) ;
+}
+.active{
+  background-color: #29323C;
+  color: #E7E8E8;
+  opacity: 100%;
+  box-shadow: 0px 1px 8px #29323C;
+
+}
+
+.LogoutStyle{
+  display: flex;
+  background-color: #1A232C;
+  color: white;
+  font-size: 21px;
+  opacity: 90%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border-color: none;
+  width: 210px;
+  text-align: center;
+  box-shadow: 0px 1px 8px #29323C;
+  transition: .2s;
+  border: solid 1px #29323C;
+  gap: 14px;
+  
+}
+.LogoutStyle:hover {
+  color: #121B26;
+  text-shadow: 0 0 5px #121B26;
+  background: #EAEAEA; 
+  transform: scale(1.1) ;
+}
+
+@media only screen and (max-width: 1666px) and (min-width:1020px) {
+  .Logo{
+    justify-content: center;
+    margin: 35px 0px 82px 0px;
+    gap: 0px;
+  }
+  .Sidebar{
+    width: 80px !important;
+    }
+  .Sidebar p{
+    display: none;
+  }
+  .Sidebar h4{
+    display: none;
+  }
+  .link{
+    justify-content: center;
+    margin: 18px 8px;
+    border-radius: 16px;
+    gap: 0px;
+    padding: 14px 0px;
+  }
+  .link:hover{
+    animation: swing ease-in-out 0.5s 1 alternate;
+    transform: scale(1) ;
+    opacity: 100%;
+  }
+
+  .LogoutStyle{
+    color: #1A232C;
+    width: 60px;
+    opacity: 70%;
+    justify-content: center;
+    margin: 18px 8px;
+    border-radius: 16px;
+    gap: 0px;
+    padding: 16px 0px;
+    background-color: unset;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px ;
+  }
+  .LogoutStyle:hover {
+    color: white;
+    text-shadow: 0 0 0px;
+    background: #29323C; 
+    transform: scale(1) ;
+    animation: swing ease-in-out 0.5s 1 alternate;
+    opacity: 100%;
+    box-shadow: 0px 1px 8px #29323C;
+  }
+
+  @keyframes swing {
+    0%,
+    30%,
+    50%,
+    70%,
+    100% {
+      transform: rotate(0deg);
+    }
+  
+    10% {
+      transform: rotate(30deg);
+    }
+  
+    40% {
+      transform: rotate(-30deg);
+    }
+  
+    60% {
+      transform: rotate(20deg);
+    }
+  
+    80% {
+      transform: rotate(-20deg);
+    }
+  }
+
+}
