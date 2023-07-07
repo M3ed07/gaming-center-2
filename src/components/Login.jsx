@@ -67,7 +67,7 @@ const LoginForm = ({token}) => {
           <div className="form-input-group">
           <label htmlFor="password">Password</label>
             <input type={passwordShown ? "text" : "password"}  placeholder='password' onChange={(e)=>setPassword(e.target.value)} required/>
-            <button className='passwordEye' onClick={togglePassword}><img src={require('../Images/logo and icons/invisible.png')} height={30} width={30} alt="password"/></button>
+            <button className='passwordEye' type='button' onClick={togglePassword}><img src={require('../Images/logo and icons/invisible.png')} height={30} width={30} alt="password"/></button>
           </div>
           <button className='LoginSubmitButton' type="submit" ><LoginIcon/>Login</button>
           <div className='CreateNewAccount' ><p>Don't have an account ? <button onClick={()=>Navigate('/signup')}>Register</button></p></div>
