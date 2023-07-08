@@ -1,0 +1,79 @@
+.container {
+  margin: 40px 50px;
+}
+h1 {
+  opacity: 90%;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #2e363e;
+  font-weight: 400;
+  font-size: 50px;
+  font-weight: bold;
+}
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #29323c;
+  font-size: 19px;
+  font-weight: normal;
+  opacity: 70%;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+th {
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+td {
+  padding: 12px 16px;
+  text-align: center;
+  border-top: 1px solid rgb(204, 202, 202);
+  border-bottom: 1px solid rgb(204, 202, 202);
+}
+
+.moreverticon {
+  cursor: pointer;
+}
+
+.deletebutton {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+.moreverticon {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: transparent;
+}
+.optionsContainer {
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+.disableEnable-button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+
+
