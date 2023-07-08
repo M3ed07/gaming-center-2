@@ -85,4 +85,3 @@ const [arrIndex, setarrIndex] = useState(0)
 }
 
 export default Reservations
-

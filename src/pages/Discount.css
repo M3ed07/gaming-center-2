@@ -12,7 +12,7 @@ h1 {
 .para {
   font-family: "Bai Jamjuree", sans-serif;
   color: #29323c;
-  font-size: 19px;
+  /* font-size: 19px; */
   font-weight: normal;
   opacity: 70%;
 }

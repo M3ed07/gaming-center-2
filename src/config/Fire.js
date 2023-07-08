@@ -22,6 +22,7 @@ export const signInWithGoogle = ()=>{
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
     localStorage.setItem("token",token)
+    window.location.href = '/sidebar/dashboard'; // Redirect to the dashboard
   }).catch((error) => {
     console.log(error);
   });

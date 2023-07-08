@@ -1,8 +1,17 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import Pagination from "@material-ui/lab/Pagination";
+import Checkbox from '@mui/material/Checkbox';
 
 const columns = [
+  {
+    field: 'selection',
+    headerName: 'Selection',
+    width: 120,
+    renderCell: (params) => (
+      <Checkbox color="default" checked={params.value} style={{ color: '#fff' }} />
+    ),
+  },
+
   { field: 'id', headerName: 'ID', width: 70 },
   { field: 'firstName', headerName: 'First name', width: 130 },
   { field: 'lastName', headerName: 'Last name', width: 130 },
@@ -38,7 +47,6 @@ export default function AdminTable() {
           },
         }}
         pageSizeOptions={[5, 10]}
-        checkboxSelection
       />
     </div>
   );

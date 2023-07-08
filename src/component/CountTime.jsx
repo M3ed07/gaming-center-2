@@ -20,28 +20,38 @@ function CountTime() {
     let timer = useRef();
     useEffect(() => {
         if (active === true){ 
-        setButtonText('RESTART')
         timer.current = setInterval(()=> {
           setCount((count) => count + 1);
         }, 1000);}
         return ()=> clearInterval(timer.current) 
       },[active,count,timer]);
 
-const Start = () => {
-    if(ButtonText === 'START'){
-        setActive(true) }
-        else {
+      const Start = () => {
+        if (ButtonText === 'START') {
+          setActive(true);
+          setButtonText('RESTART');
+        } else {
           swal({
-            icon: "success",
-            title: "Counting is Completed",
-            text:`Total Cost is ${count} IQD` 
-          })
-            setCount(0)
-            setActive(false)
-            setButtonText ('START')
+            icon: 'success',
+            title: 'Counting is Completed',
+            text: `Total Cost is ${count} IQD`
+          });
+          setCount(0);
+          setActive(false);
+          setButtonText('START');
         }
-    
-}
+      };
+      
+      useEffect(() => {
+        const startButton = document.getElementById('startButton');
+        if (active) {
+          startButton.classList.add('glowButton');
+        } else {
+          startButton.classList.remove('glowButton');
+        }
+      }, [active]);
+      
+      
 const Pause = () => {
     if(secondButtonText === 'PAUSE'){
     clearInterval(timer.current)
@@ -65,7 +75,9 @@ const Pause = () => {
             </div>
             </div>
 
-            <button  onClick={Start}><h3>{ButtonText}</h3></button>
+            <button onClick={Start} id="startButton" className={active ? 'glowButton' : ''}><h3>{ButtonText}</h3></button>
+
+
             <button  onClick={Pause} id='StopButton'><h3>{secondButtonText}</h3></button>
             <div className="Timer" id='timer'>
            <div className='TimerImg'><img src={calculator} width={9} height={9} alt="clock" /></div>

@@ -349,3 +349,15 @@
       font-size: 10px;
     }
 }
+.glowButton {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px white;
+  }
+  100% {
+    box-shadow: 0 0 10px white;
+  }
+}
