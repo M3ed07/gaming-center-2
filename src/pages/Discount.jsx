@@ -204,7 +204,7 @@ const Discount = () => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
 
         <h1>Discounts & Prizes</h1>
-        <p>Discount, Prize, Other </p>
+        <p className="para">Discounts, Prizes, Other </p>
 
 
         <Box
