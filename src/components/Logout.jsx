@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import LogoutIcon from '@mui/icons-material/Logout';
 import swal from 'sweetalert';
 import { getAuth, signOut } from "firebase/auth";
+import { Tooltip } from '@mui/material';
 function Logout() {
     const Navigate = useNavigate();
     const handleLogout = ()=>{
@@ -20,7 +21,7 @@ function Logout() {
           });
     }
   return (
-    <button className='LogoutStyle' onClick={handleLogout}><LogoutIcon/><h4>Logout</h4></button>
+    <button className='LogoutStyle' onClick={handleLogout}> <Tooltip title="Log out" placement='right'> <LogoutIcon/> </Tooltip> <h4>Logout</h4></button>
   )
 }
 
