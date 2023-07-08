@@ -1,7 +1,7 @@
 .container {
   margin: 40px 50px;
 }
-h1 {
+#discount h1 {
   opacity: 90%;
   font-family: "Bai Jamjuree", sans-serif;
   color: #2e363e;
@@ -9,6 +9,7 @@ h1 {
   font-size: 50px;
   font-weight: bold;
 }
+
 .para {
   font-family: "Bai Jamjuree", sans-serif;
   color: #29323c;

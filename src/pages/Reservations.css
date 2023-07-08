@@ -111,6 +111,10 @@
     text-align: center;
     margin-bottom: 6px;
     display: block;
+    opacity: 100%;
+  }
+  .TimeSystem button:hover {
+    animation: glow 1s infinite alternate;
   }
   .CardPS5IMG{
     margin: 8px 0px 4px 0px;

@@ -195,7 +195,7 @@ const Discount = () => {
 
 
   return (
-    <div div className="container">
+    <div div className="container" id="discount">
         {loading ? (
 
         <Loader/>
