@@ -62,7 +62,7 @@ const SignUp = () => {
           <div className="form-input-group-SignUp">
           <label htmlFor="password">Password</label>
             <input type={passwordShown ? "text" : "password"}  placeholder='password' onChange={(e)=>setValues((prev)=>({...prev,password:e.target.value}))}/>
-            <button className='passwordEye' onClick={togglePassword}><img src={require('../Images/logo and icons/invisible.png')} height={30} width={30} alt="" /></button>
+            <button className='passwordEye' type='button' onClick={togglePassword}><img src={require('../Images/logo and icons/invisible.png')} height={30} width={30} alt="" /></button>
           </div>
           <button className='LoginSubmitButton' type="submit">Create Account</button>
           <div className='AccountCreated' ><p>Already a member ? <button onClick={()=>Navigate('/')}>login</button></p></div>

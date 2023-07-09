@@ -278,3 +278,12 @@ font-weight: bold;
     filter: drop-shadow(0 0 5px #EAEAEA);
   }
 }
+.cancel-button:hover{
+  background-color: #cdcdcd !important;
+}
+.logout-button{
+  background-color: #f8bb86 !important;
+}
+.logout-button:hover{
+  background-color: #f8b173 !important;
+}
