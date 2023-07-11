@@ -78,7 +78,7 @@ const SignUp = () => {
     <div className="login-form-container">
       <img className="Login-img" src={require('../Images/loginImage.png')} alt="valorant" />
       <div className="LoginTopSection">
-        <img src={require('../Images/logo and icons/WhiteLogo.png')} width={70} height={70} alt="" />
+        <img src={require('../Makers project/logo and icons/NewLogo.png')} width={80} height={80} alt="" />
         <h2>Game Center</h2>
       </div>
       <h2 className="Discription">Insert your information to<br />Create new Account</h2>

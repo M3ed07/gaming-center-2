@@ -1,7 +1,7 @@
 import React from 'react'
 import { SidebarData } from './SidebarData'
 import { NavLink } from 'react-router-dom'
-import ele from "../Makers project/logo and icons/ele.png"
+import NewLogo from "../Makers project/logo and icons/NewLogo.png"
 import { Outlet } from 'react-router-dom';
 import Logout from '../components/Logout';
 function Sidebar({children}) {
@@ -10,7 +10,7 @@ function Sidebar({children}) {
       
     <div className='Sidebar'>
     <div className='Logo'>
-        <img src={ele} alt="Logo" height={50} width={50}/>
+        <img src={NewLogo} alt="Logo" height={60} width={60}/>
         <p>Game center</p>
       </div>
         {SidebarData.map((item,index)=>(

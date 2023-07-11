@@ -71,7 +71,7 @@ const LoginForm = ({ token }) => {
     <div className="login-form-container">
       <img className="Login-img" src={require('../Images/loginImage.png')} alt="valorant" />
       <div className="LoginTopSection">
-        <img src={require('../Makers project/logo and icons/ele.png')} width={70} height={70} alt="" />
+        <img src={require('../Makers project/logo and icons/NewLogo.png')} width={80} height={80} alt="" />
         <h2>Game Center</h2>
       </div>
       <h2 className="Discription">Let's Login with our Game Center<br />Account First </h2>
