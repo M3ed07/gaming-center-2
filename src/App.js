@@ -1,7 +1,8 @@
 import './App.css';
+import { useState } from 'react';
 import Login from './components/Login'
 import SignUp from './components/SignUp'
-import {Routes , Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Employees from './pages/Employees'
 import Discount from './pages/Discount'
@@ -12,11 +13,11 @@ import Sidebar from './component/Sidebar';
 import ProtectedRoute from './routes/ProtectedRoute'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
   return (
-    
-    
-    <Routes>
-      <Route path='/' element={<Login/>}/>
+      <Routes>
+      <Route path='/' element={<Login isLoading={isLoading}
+      setIsLoading={setIsLoading}/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route element={<ProtectedRoute/>}>
       <Route path='/sidebar' element={<Sidebar/>}>
@@ -29,8 +30,6 @@ function App() {
       </Route>
       </Route>
     </Routes>
-
-    
   );
 }
 

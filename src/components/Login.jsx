@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 import LoginIcon from '@mui/icons-material/Login';
 import { auth, signInWithGoogle } from '../config/Fire';
 import swal from 'sweetalert';
-import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import './SignIn.css';
+import Loader from '../Loading/Loader';
 
-const LoginForm = ({ token }) => {
-  const Navigate = useNavigate();
+const LoginForm = ({ isLoading, setIsLoading }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordShown, setPasswordShown] = useState(false);
   const [formErrors, setFormErrors] = useState({});
-
+  const Navigate = useNavigate();
   const validationSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Email is required'),
     password: Yup.string()
@@ -23,6 +23,7 @@ const LoginForm = ({ token }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true);
 
     try {
       await validationSchema.validate({ email, password }, { abortEarly: false });
@@ -61,6 +62,7 @@ const LoginForm = ({ token }) => {
         });
       }
     }
+    setIsLoading(false)
   };
 
   const togglePassword = () => {
@@ -68,6 +70,10 @@ const LoginForm = ({ token }) => {
   };
 
   return (
+    <div>
+      {isLoading ? (
+        <div><Loader/></div> // Replace with your desired loader component
+      ) : (
     <div className="login-form-container">
       <img className="Login-img" src={require('../Images/loginImage.png')} alt="valorant" />
       <div className="LoginTopSection">
@@ -116,6 +122,8 @@ const LoginForm = ({ token }) => {
           </p>
         </div>
       </form>
+    </div>
+    )}
     </div>
   );
 };
