@@ -287,3 +287,10 @@ font-weight: bold;
 .logout-button:hover{
   background-color: #f8b173 !important;
 }
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  width: 400px;
+}
