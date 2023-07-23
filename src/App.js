@@ -11,12 +11,13 @@ import Tournaments from './pages/Tournaments'
 import Notifications from './pages/Notifications'
 import Sidebar from './component/Sidebar';
 import ProtectedRoute from './routes/ProtectedRoute'
-
+import UserInterface from './pages/Interface/UserInterface';
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   return (
       <Routes>
-      <Route path='/' element={<Login isLoading={isLoading}
+      <Route path='/' element={<UserInterface/>}/>
+      <Route path='/login' element={<Login isLoading={isLoading}
       setIsLoading={setIsLoading}/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route element={<ProtectedRoute/>}>

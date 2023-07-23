@@ -135,7 +135,7 @@ const SignUp = () => {
         </button>
         <div className="AccountCreated">
           <p>
-            Already a member? <button onClick={() => Navigate('/')}>Login</button>
+            Already a member? <button onClick={() => Navigate('/login')}>Login</button>
           </p>
         </div>
       </form>

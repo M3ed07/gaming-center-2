@@ -70,7 +70,7 @@ const LoginForm = ({ isLoading, setIsLoading }) => {
   };
 
   return (
-    <div>
+    <div className='signInContainer'>
       {isLoading ? (
         <div><Loader/></div> // Replace with your desired loader component
       ) : (

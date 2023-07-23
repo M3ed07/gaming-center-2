@@ -30,7 +30,7 @@ function Logout() {
     }).then((confirmed) => {
       if (confirmed) {
         localStorage.removeItem('token');
-        Navigate('/');
+        Navigate('/login');
         const auth = getAuth();
         signOut(auth)
           .then(() => {
