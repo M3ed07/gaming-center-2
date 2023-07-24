@@ -114,6 +114,20 @@ function UserInterface() {
           </div>
       </section>
 
+      <section className='ThirdSection'>
+        <div className='ThirdSectionContainer'>
+          <div className='ThirdSectionImages'>
+          <img src={require('../../Makers project/Images and ill/ThirdSectionImg.png')} width={660} height={970} alt="" />
+          </div>
+        <div className='FisrtSectionMiddleTypography'>
+        <h1>Reserve Your Seat And<br/>Have Fun</h1>
+        <p>Choose the date, reserve a seat for you<br/>and your friends, and have the competition<br/>of a lifetime </p>
+        <div className='DownloadButtons' style={{display:'flex'}}>
+        <button style={{width:'420px'}} id='BrowserButton'>Learn More About Seat Reservation</button>
+        </div>
+        </div>
+        </div>
+      </section>
     </div>
   )
 }
