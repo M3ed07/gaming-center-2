@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/arial-mt');
 .InterfaceContainer{
     background-color: #EAEAEA;
-    height: 300vh;
+    /* height: 0vh; */
     width: 100%;
     color: white;
     position: sticky;
@@ -323,4 +323,52 @@ transform: translate(-110px,-30px);
     background-position-y: 120px;
     transform: translate(10%,-3%);
     background-repeat: no-repeat;
+}
+
+/* Fiurth Section */
+.FourthLeftHalfSection{
+    display: flex;
+    margin: 30px 0px 0px 30px ;
+    width: 54%;
+}
+#FourthSectionImg{
+    transform: translate(-28%,-17.3%);
+}
+#InsideDiscountFourth{
+    padding-left: 8px;
+    justify-content: start;
+    transform: translateX(20%);
+    opacity: 100%;
+    filter: brightness(1.4);
+    
+}
+.FourthAtt{
+    margin-left: 40px;
+}
+
+/* Footer */
+
+.Footer{
+    height: 200vh;
+    background-image: linear-gradient(#1B242E,#000000);  
+
+}
+#Footer{
+    width: 50%;
+    background-image: url('../../Makers project/Images and ill/FooterBackground.png');
+    background-size: contain;
+    background-position: 0%;
+    background-position-y: -30px;
+    transform: translate(10%,-3%);
+    background-repeat: no-repeat;
+}
+
+.FooterLines{
+
+    width: 1200px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 70%;
+    filter: drop-shadow(0px 0px 8px #FFE2E7);
+    border-radius: 10px;
 }

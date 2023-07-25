@@ -128,8 +128,66 @@ function UserInterface() {
         </div>
         </div>
       </section>
+
+      <section className='SecondSection'>
+        <div className='FisrtSectionMiddleTypography' id='secondTypography'>
+        <h1>Know the games available<br/>in the Game Center …</h1>
+        <p>You can now know the games available in<br/>your Game Center before booking your seat,<br/>and you can also know the available game<br/>versions</p>
+        </div>
+        
+        <div className='DiscountPara'>
+          <div className='FourthLeftHalfSection'>
+            <img src={require('../../Makers project/logo and icons/blackops.png')} style={{opacity:'80%'}} width={60} height={60} alt="" />
+            <img src={require('../../Makers project/Images and ill/FourthSectionimg.png')} id='FourthSectionImg' height={600} width={476} alt="FourhSection" />
+          </div>
+          <div className='DiscountParaRightHalf'>
+            <h3 style={{marginLeft:'40px'}}>Game List</h3>
+            <div className='InsideDiscounts' id='InsideDiscountFourth'>
+              <img src={require('../../Makers project/logo and icons/icons8-counter-strike-512.png')} height={30} width={30} alt="" />
+              <div className='AttributeLine' id='RightLine'></div>
+              <h4 style={{opacity:'80%' , fontSize:'12px'}}>Counter Strike</h4>
+              </div>
+              <div className='InsideDiscounts FourthAtt' id='InsideDiscountFourth'>
+              <img src={require('../../Makers project/logo and icons/icons8-pubg-lite-480.png')} height={30} width={30} alt="" />
+              <div className='AttributeLine' id='RightLine'></div>
+              <h4 style={{opacity:'80%' , fontSize:'12px'}}>PUBG Lite</h4>
+              </div>
+              <div className='InsideDiscounts' id='InsideDiscountFourth'>
+              <img src={require('../../Makers project/logo and icons/icons8-fortnite-llama-480.png')} height={30} width={30} alt="" />
+              <div className='AttributeLine' id='RightLine'></div>
+              <h4 style={{opacity:'80%' , fontSize:'12px'}}>Fortnite</h4>
+              </div>
+              <div className='InsideDiscounts FourthAtt' id='InsideDiscountFourth'>
+              <img src={require('../../Makers project/logo and icons/icons8-rainbow-six-siege-96-2.png')} height={30} width={30} alt="" />
+              <div className='AttributeLine' id='RightLine'></div>
+              <h4 style={{opacity:'80%' , fontSize:'12px'}}>Rainbow</h4>
+              </div>
+              <div className='InsideDiscounts' id='InsideDiscountFourth'>
+              <img src={require('../../Makers project/logo and icons/icons8-destiny-2-512.png')} height={30} width={30} alt="" />
+              <div className='AttributeLine' id='RightLine'></div>
+              <h4 style={{opacity:'80%' , fontSize:'12px'}}>Destiny</h4>
+              </div>
+              
+          </div>
+        </div>
+      </section>
+
+      <section className='ThirdSection Footer'>
+        <div className='ThirdSectionContainer'>
+          <div className='ThirdSectionImages' id='Footer'>
+          <img src={require('../../Makers project/Images and ill/FooterImg.png')} width={660} height={970} alt="" />
+          </div>
+        <div className='FisrtSectionMiddleTypography'>
+        <h1>Participate With Your Team<br/>In Various Tournaments</h1>
+        <p>Participate in tournaments offered by your Game Center,<br/>Enter bloody competitions with your friends and your<br/>own team and win titles and prizes</p>
+        <div className='DownloadButtons' style={{display:'flex'}}>
+        <button style={{width:'420px'}} id='BrowserButton'>Learn More About Seat Tournaments</button>
+        </div>
+        </div>
+        </div>
+        
+      </section>
     </div>
   )
 }
-
 export default UserInterface
